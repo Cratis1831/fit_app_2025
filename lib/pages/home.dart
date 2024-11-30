@@ -5,7 +5,7 @@ import 'package:fit_app_2025/pages/profile/profile.dart';
 import 'package:fit_app_2025/pages/settings/settings.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/colors.dart';
+import '../constants/constants.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -58,7 +58,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: _pages[currentPageIndex],
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(top: 16.0, left: 8.0, right: 8.0),
+        padding: const EdgeInsets.only(
+            top: 16.0, left: 8.0, right: 8.0, bottom: 16.0),
         child: NavigationBar(
           indicatorColor: primaryColor.withOpacity(0.8),
           onDestinationSelected: (int index) {

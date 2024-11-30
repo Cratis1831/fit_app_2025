@@ -1,4 +1,4 @@
-import 'package:fit_app_2025/constants/colors.dart';
+import 'package:fit_app_2025/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class ProfileHeader extends StatelessWidget {
