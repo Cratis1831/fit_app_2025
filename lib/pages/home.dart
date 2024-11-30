@@ -28,27 +28,42 @@ class _HomePageState extends State<HomePage> {
   final List<NavigationDestination> _destinations = [
     const NavigationDestination(
       selectedIcon: Icon(Icons.person_rounded),
-      icon: Icon(Icons.person_outline_rounded),
+      icon: Icon(
+        Icons.person_outline_rounded,
+        color: subTextColor,
+      ),
       label: 'Profile',
     ),
     const NavigationDestination(
       selectedIcon: Icon(Icons.history_rounded),
-      icon: Icon(Icons.history_rounded),
+      icon: Icon(
+        Icons.history_rounded,
+        color: subTextColor,
+      ),
       label: 'History',
     ),
     const NavigationDestination(
-      selectedIcon: Icon(Icons.add_rounded),
-      icon: Icon(Icons.add_rounded),
+      selectedIcon: Icon(Icons.add_box_outlined),
+      icon: Icon(
+        Icons.add_box_outlined,
+        color: subTextColor,
+      ),
       label: 'Workout',
     ),
     const NavigationDestination(
       selectedIcon: Icon(Icons.fitness_center_rounded),
-      icon: Icon(Icons.fitness_center_rounded),
+      icon: Icon(
+        Icons.fitness_center_rounded,
+        color: subTextColor,
+      ),
       label: 'Exercises',
     ),
     const NavigationDestination(
       selectedIcon: Icon(Icons.settings_rounded),
-      icon: Icon(Icons.settings_outlined),
+      icon: Icon(
+        Icons.settings_outlined,
+        color: subTextColor,
+      ),
       label: 'Settings',
     ),
   ];
@@ -61,20 +76,18 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.only(
             top: 16.0, left: 8.0, right: 8.0, bottom: 16.0),
         child: NavigationBar(
-          indicatorColor: primaryColor.withOpacity(0.8),
           onDestinationSelected: (int index) {
             setState(() {
               currentPageIndex = index;
             });
           },
-          backgroundColor: Colors.transparent,
+          // backgroundColor: Colors.transparent,
           selectedIndex: currentPageIndex,
           height: 40,
           destinations: _destinations.map((destination) {
             return NavigationDestination(
               selectedIcon: Icon(
                 (destination.selectedIcon as Icon).icon,
-                color: Theme.of(context).iconTheme.color,
               ),
               icon: destination.icon,
               label: destination.label,

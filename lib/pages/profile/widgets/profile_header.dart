@@ -1,4 +1,3 @@
-import 'package:fit_app_2025/constants/constants.dart';
 import 'package:flutter/material.dart';
 
 class ProfileHeader extends StatelessWidget {
@@ -35,14 +34,12 @@ class ProfileHeader extends StatelessWidget {
             children: [
               Text(name,
                   style: const TextStyle(
-                      color: textColor,
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                       overflow: TextOverflow.ellipsis)),
               Text(
                 '$workouts workout(s)',
                 style: const TextStyle(
-                  color: textColor,
                   fontSize: 14,
                 ),
               ),

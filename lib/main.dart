@@ -1,3 +1,4 @@
+import 'package:fit_app_2025/constants/theme.dart';
 import 'package:fit_app_2025/pages/home.dart';
 import 'package:flutter/material.dart';
 
@@ -13,10 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-          iconTheme: const IconThemeData(
-        color: Colors.white,
-      )),
+      themeMode: ThemeMode.system,
+      darkTheme: darkTheme,
+      theme: lightTheme,
       home: const HomePage(),
     );
   }

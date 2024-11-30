@@ -1,4 +1,3 @@
-import 'package:fit_app_2025/constants/constants.dart';
 import 'package:fit_app_2025/widgets/list_tile_with_switch.dart';
 import 'package:flutter/material.dart';
 
@@ -63,10 +62,10 @@ class _SettingsPageState extends State<SettingsPage> {
               }),
             },
           ),
-          const Divider(
-            indent: kDefaultDividerIndent,
-            endIndent: kDefaultDividerIndent,
-          ),
+          // const Divider(
+          //   indent: kDefaultDividerIndent,
+          //   endIndent: kDefaultDividerIndent,
+          // ),
         ],
       ),
     );
